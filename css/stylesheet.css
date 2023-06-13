@@ -1,0 +1,11 @@
+* {
+    margin: 0px;
+}
+.wrap pt-1{
+    min-width: 350px;
+}
+
+flex-item mx-2 me-4 gap-1 inline-flex{
+    text-align: center;
+    justify-content: center;
+}
