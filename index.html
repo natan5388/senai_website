@@ -19,17 +19,28 @@
 
 <body>
 	<header>
-		<nav class="navbar navbar-expand-lg" style="background-color: #333BFF;">
-			<div class="container-fluid"> <!-- AJUSTAR JUSTIFY PARA MELHOR POS NO NAVBAR -->
-				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler"
-					aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+		<nav class="navbar navbar-expand-lg" style="background-color: #333BFF;"> <!--HEADER-->
+			<div class="container-fluid">
+				<button class="navbar-toggler border-light bg-light bg-opacity-75" type="button"
+					data-bs-toggle="collapse" data-bs-target="#navbarToggler" aria-controls="navbarToggler"
+					aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
 				</button>
-				<span class="navbar-brand mb-0 me-4 h1"><!--Union Games-->
-					<img src="img/senai.png" height="50px" width="auto">
+				<span class="navbar-brand mb-0 me-4 h1">				<!--BRAND LOGO-->
+					<img src="img/senai.png" height="50px" width="auto" alt="Gaming mania logo">
 				</span>
-				<div class="collapse navbar-collapse justify-content-around align-items-center" id="navbarToggler">
-					<div class="wrap pt-1 ms-2 flex-fill">
+				<div class="collapse navbar-collapse justify-content-center align-items-center px-2" id="navbarToggler">
+					<div class="dropdown me-2"> 						<!--MENU DROPDOWN-->
+						<button class="btn btn-info dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+							Produtos por Categoria
+						</button>
+						<ul class="dropdown-menu">
+						  	<li><a class="dropdown-item" href="#">JOGOS</a></li>
+						  	<li><a class="dropdown-item" href="#">HARDWARE</a></li>
+							<li><a class="dropdown-item" href="#">CONSOLES</a></li>
+						</ul>
+					  </div>
+					<div class="wrap pt-1 ms-2 flex-grow-1">			<!--SEARCH BAR-->
 						<div class="search flex-item">
 							<input type="text" class="searchTerm" placeholder="Procurando algo?">
 							<button type="submit" class="searchButton">
@@ -37,15 +48,15 @@
 							</button>
 						</div>
 					</div>
-					<div class="flex-item mx-2 me-4 gap-1">
+					<div class="flex-item mx-2 me-4 gap-1"> 			<!--BUY CART-->
 						<a class="navbar buycart pb-1" href="#">
 							<img src="img/cart2.png" alt="carrinho" height="50px" width="50px">
-							<!--<h4 class="link-light mx-1">carrinho</h4>-->
 						</a>
 					</div>
-					<div class="flex-item mx-2 me-4 gap-1 inline-flex">
+					<div class="flex-item mx-2 me-4 gap-1 inline-flex"> <!--PROFILE CARD-->
 						<a class="navbar-link link-underline-opacity-0" href="">
-							<img class="image" src="img/user-image-with-black-background-svgrepo-com.svg" alt="userpic" width="50px" height="50px">
+							<img class="image" src="img/user-image-with-black-background-svgrepo-com.svg" alt="userpic"
+								width="50px" height="50px">
 							<a href="#" class="noLoginMesage link-light link-offset-2 ps-3">Login ou Registrar-se</a>
 						</a>
 					</div>
@@ -53,6 +64,139 @@
 			</div>
 		</nav>
 	</header>
+	<!--Main PART of website BELOW-->
+	<section>
+		<div id="carouselExampleCaptions" class="carousel slide">
+			<div class="carousel-indicators">
+				<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+					aria-current="true" aria-label="Slide 1"></button>
+				<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+					aria-label="Slide 2"></button>
+				<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+					aria-label="Slide 3"></button>
+			</div>
+			<div class="carousel-inner">
+				<div class="carousel-item active">
+					<img src="img/x-box-gc4df2d7bc_1280.jpg" class="d-block w-100" style="object-fit: cover;"
+						height="300px" alt="consoles"> <!--corrigir alt-->
+					<div class="carousel-caption d-none d-md-block">
+						<h3 class="texto-banner">CONSOLES DE ULTIMA GERAÇÃO</h3>
+						<p class="texto-banner fs-5">Temos os ultimos consoles, pelo melhores preços!</p>
+					</div>
+				</div>
+				<div class="carousel-item">
+					<img src="img/andy-holmes-EOAKUQcsFIU-unsplash.jpg" style="object-fit: cover;" height="300px"
+						class="d-block w-100" alt="hardwares pc">
+					<div class="carousel-caption d-none d-md-block">
+						<h3 class="texto-banner">PEÇAS PARA O SEU COMPUTADOR GAMER</h5>
+							<p class="texto-banner fs-5">Compre peças para seu computador, ou monte sua maquina conosco!
+							</p>
+					</div>
+				</div>
+				<div class="carousel-item">
+					<img src="img/catalogue.jpg" style="object-fit: cover;" height="300px" class="d-block w-100"
+						alt="jogos banner">
+					<div class="carousel-caption d-none d-md-block">
+						<h3 class="texto-banner">IMENSO CATALOGO DE JOGOS</h5>
+							<p class="texto-banner fs-5">Compre os jogos das suas franquias favoritas, com pronta
+								entrega!</p>
+					</div>
+				</div>
+			</div>
+			<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+				data-bs-slide="prev">
+				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				<span class="visually-hidden">Previous</span>
+			</button>
+			<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+				data-bs-slide="next">
+				<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				<span class="visually-hidden">Next</span>
+			</button>
+		</div> <!-- FIM CAROUSEL -->
+		<div>
+			<p class="fw-semibold fs-4 mx-2 mx-xl-3 my-2">Mais vendidos</p>
+		</div>
+		<div class="container-fluid mt-3 mx-sm-auto"> <!--Placeholder products-->
+			<div class="row">
+				<div class="col-sm-2 col-md mb-3">
+					<a href="#produto1" style="text-decoration: none;">
+						<div id="productDetails">
+							<img src="img/blank-g897752c91_640.jpg" width="100%" height="200px"
+								style="display: block; margin: auto;">
+							<p class="text-black fw-semibold px-1">Monitor FULL HD, Ips, 60Hz, 27"pol</p>
+							<span class="fw-semibold text-decoration-line-through px-1 fs-5" style="color: #FF8B20;">1200R$</span> -> 
+							<span class="fs-5 fw-semibold text-success"> 985,00 R$<br></span> <span class="px-1 fs-6 text-success">a vista ou no boleto</span>
+							<a class="btn btn-success w-100" href="#buycart">
+								COMPRAR | ADD AO CARRINHO
+							</a>
+						</div>
+					</a>
+				</div>
+				<div class="col-sm-2 col-md mb-3">
+					<a href="#produto1" style="text-decoration: none;">
+						<div id="productDetails">
+							<img src="img/laptop-ga1566a91f_640.jpg" width="100%" height="200px"
+								style="display: block; margin: auto;">
+							<p class="text-black fw-semibold px-1">Notebook i5, 8GB Ram, Gtx 1650, 1TB..</p> 
+							<span class="fs-5 fw-semibold text-success px-1"> 2.100,00 R$<br></span> <span class="px-1 fs-6 text-success">a vista ou no boleto</span>
+							<a class="btn btn-success w-100" href="#buycart">
+								COMPRAR | ADD AO CARRINHO
+							</a>
+						</div>
+					</a>
+				</div>
+				<div class="col-sm-2 col-md mb-3">
+					<a href="#produto1" style="text-decoration: none;">
+						<div id="productDetails">
+							<img src="img/gamepad-g2fe493e14_640.jpg" width="100%" height="200px"
+								style="display: block; margin: auto;">
+							<p class="text-black fw-semibold px-1">Controle XBOX sem fio, Branco e Preto.</p>
+							<span class="fw-semibold text-decoration-line-through px-1 fs-5" style="color: #FF8B20;">360,20 R$</span> -> 
+							<span class="fs-5 fw-semibold text-success"> 200,00 R$<br></span> <span class="px-1 fs-6 text-success">a vista ou no boleto</span>
+							<a class="btn btn-success w-100" href="#buycart">
+								COMPRAR | ADD AO CARRINHO
+							</a>
+						</div>
+					</a>
+				</div>
+				<div class="col-sm-2 col-md mb-3">
+					<a href="#produto1" style="text-decoration: none;">
+						<div id="productDetails">
+							<img src="img/playstation-g3f92c4b3e_1280.jpg" width="100%" height="200px"
+								style="display: block; margin: auto;">
+							<p class="text-black fw-semibold px-1">Controle PS4 sem fio, Branco e Preto.</p>
+							<span class="fw-semibold text-decoration-line-through px-1 fs-5" style="color: #FF8B20;">380,30 R$</span> -> 
+							<span class="fs-5 fw-semibold text-success"> 240,00 R$<br></span> <span class="px-1 fs-6 text-success">a vista ou no boleto</span>
+							<a class="btn btn-success w-100" href="#buycart">
+								COMPRAR | ADD AO CARRINHO
+							</a>
+						</div>
+					</a>
+				</div>
+				<div class="col-sm-2 col-md mb-3">
+					<a href="#produto1" style="text-decoration: none;">
+						<div id="productDetails">
+							<img src="img/mobile-phone-g4e0d74690_640.jpg" width="100%" height="200px"
+								style="display: block; margin: auto;">
+							<p class="text-black fw-semibold px-1">Celular android, 6GB ram, DUAL chip.</p>
+							<span class="fw-semibold text-decoration-line-through px-1 fs-5" style="color: #FF8B20;">380,30 R$</span> -> 
+							<span class="fs-5 fw-semibold text-success"> 240,00 R$<br></span> <span class="px-1 fs-6 text-success">a vista ou no boleto</span>
+							<a class="btn btn-success w-100" href="#buycart">
+								COMPRAR | ADD AO CARRINHO
+							</a>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div> <!--END PLACE PRODUCTS-->
+		<div class="containergg">
+			<a href="#" style="text-decoration: none; color: rgb(0, 196, 33);">
+				<img src="img/cpu-g58a25c271_640.jpg" width="100%" height="200px" style="object-fit: cover;">
+				<div class="centered">MONTE O SEU COMPUTADOR</div>
+			</a>
+		</div>
+	</section>
 	<!--FOOTER BELOW-->
 	<footer>
 
