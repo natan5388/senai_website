@@ -4,20 +4,6 @@
 navbar-toggler border-light span {
     color: white;
 }
-p{
-    margin-bottom: 0px;
-}
-
-flex-item mx-2 me-4 gap-1 inline-flex {
-    text-align: center;
-    justify-content: center;
-}
-
-container-fluid mt-3 row col-sm-2 img{
-    background-color: #0000003a;
-    margin-left: auto;
-    margin-right: auto;
-}
 
 .texto-banner {
     font-family: 'Geologica', sans-serif;
@@ -31,6 +17,7 @@ container-fluid mt-3 row col-sm-2 img{
     text-align: center;
     color: white;
 }
+/* ADD CENTER TEXT TO SUB IMAGE */
 .centered {
     position: absolute;
     top: 50%;
@@ -41,18 +28,95 @@ container-fluid mt-3 row col-sm-2 img{
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
-#productDetails{
+#productDetails {
     background-color: #D9D9D9;
+    border: 1px solid #ccc;
+    border-radius: 10px;
 }
 
-/* ADD DECORATION TO HOVER PRODUCTS */
-.col-sm-2{
-    transition: box-shadow .3s;
+/* LOGIN */
+.card {
+    width: 400px;
+    border: none;
 }
-#produto1{
-    box-shadow: 0 0 11px rgba(33,33,33,.2);
+.btr {
+    border-top-right-radius: 5px !important;
+}
+.btl {
+    border-top-left-radius: 5px !important;
+}
+.btn-dark {
+    color: #fff;
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+}
+.btn-dark:hover {
+    color: #fff;
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+}
+.nav-pills {
+    display: table !important;
+    width: 100%;
+}
+.nav-pills .nav-link {
+    border-radius: 0px;
+    border-bottom: 1px solid #0d6efd40;
+}
+.nav-item {
+    display: table-cell;
+    background: #0d6efd2e;
+}
+.form {
+    padding: 10px;
+    height: 300px;
+}
+.form input {
+    margin-bottom: 12px;
+    border-radius: 3px;
+}
+.form input:focus {
+    box-shadow: none;
+}
+.form button {
+    margin-top: 20px;
 }
 
+/* FLOAT BUTTON TO TOP */
+#TopBtn {
+    display: block; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: #0d6efd; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+  }
+  
+#TopBtn:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
+}
+/* small adjustments */
+.redeslogo{
+    height: 35px;
+    width: 35px;
+}
+.linkredes{
+    padding: 0 3px;
+}
+.creditos{
+    display: block;
+    color: #fff;
+    margin: 0px auto;
+    text-align: center;
+    padding-bottom: 20px;
+}
 /* SWITCHING CAROUSEL COLOR */
 .carousel-control-prev-icon {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%2303fca1' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;

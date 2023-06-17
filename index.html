@@ -26,29 +26,30 @@
 					aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
 				</button>
-				<span class="navbar-brand mb-0 me-4 h1">				<!--BRAND LOGO-->
+				<span class="navbar-brand mb-0 me-3 h1"> <!--BRAND LOGO-->
 					<img src="img/senai.png" height="50px" width="auto" alt="Gaming mania logo">
 				</span>
 				<div class="collapse navbar-collapse justify-content-center align-items-center px-2" id="navbarToggler">
-					<div class="dropdown me-2"> 						<!--MENU DROPDOWN-->
-						<button class="btn btn-info dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+					<div class="dropdown mx-2"> <!--MENU DROPDOWN-->
+						<button class="btn btn-info dropdown-toggle" type="button" data-bs-toggle="dropdown"
+							aria-expanded="false">
 							Produtos por Categoria
 						</button>
 						<ul class="dropdown-menu">
-						  	<li><a class="dropdown-item" href="#">JOGOS</a></li>
-						  	<li><a class="dropdown-item" href="#">HARDWARE</a></li>
+							<li><a class="dropdown-item" href="#">JOGOS</a></li>
+							<li><a class="dropdown-item" href="#">HARDWARE</a></li>
 							<li><a class="dropdown-item" href="#">CONSOLES</a></li>
 						</ul>
-					  </div>
-					<div class="wrap pt-1 ms-2 flex-grow-1">			<!--SEARCH BAR-->
+					</div>
+					<div class="wrap pt-1 ms-2 flex-grow-1"> <!--SEARCH BAR-->
 						<div class="search flex-item">
-							<input type="text" class="searchTerm" placeholder="Procurando algo?">
+							<input type="text" class="searchTerm" style="width: 280px;" placeholder="Procurando algo?">
 							<button type="submit" class="searchButton">
 								<i class="fa fa-search"></i>
 							</button>
 						</div>
 					</div>
-					<div class="flex-item mx-2 me-4 gap-1"> 			<!--BUY CART-->
+					<div class="flex-item mx-2 me-4 gap-1"> <!--BUY CART-->
 						<a class="navbar buycart pb-1" href="#">
 							<img src="img/cart2.png" alt="carrinho" height="50px" width="50px">
 						</a>
@@ -125,8 +126,10 @@
 							<img src="img/blank-g897752c91_640.jpg" width="100%" height="200px"
 								style="display: block; margin: auto;">
 							<p class="text-black fw-semibold px-1">Monitor FULL HD, Ips, 60Hz, 27"pol</p>
-							<span class="fw-semibold text-decoration-line-through px-1 fs-5" style="color: #FF8B20;">1200R$</span> -> 
-							<span class="fs-5 fw-semibold text-success"> 985,00 R$<br></span> <span class="px-1 fs-6 text-success">a vista ou no boleto</span>
+							<span class="fw-semibold text-decoration-line-through px-1 fs-5"
+								style="color: #FF8B20;">1200R$</span> ->
+							<span class="fs-5 fw-semibold text-success"> 985,00 R$<br></span> <span
+								class="px-1 fs-6 text-success">a vista ou no boleto</span>
 							<a class="btn btn-success w-100" href="#buycart">
 								COMPRAR | ADD AO CARRINHO
 							</a>
@@ -138,8 +141,9 @@
 						<div id="productDetails">
 							<img src="img/laptop-ga1566a91f_640.jpg" width="100%" height="200px"
 								style="display: block; margin: auto;">
-							<p class="text-black fw-semibold px-1">Notebook i5, 8GB Ram, Gtx 1650, 1TB..</p> 
-							<span class="fs-5 fw-semibold text-success px-1"> 2.100,00 R$<br></span> <span class="px-1 fs-6 text-success">a vista ou no boleto</span>
+							<p class="text-black fw-semibold px-1">Notebook i5, 8GB Ram, Gtx 1650, 1TB..</p>
+							<span class="fs-5 fw-semibold text-success px-1"> 2.100,00 R$<br></span> <span
+								class="px-1 fs-6 text-success">a vista ou no boleto</span>
 							<a class="btn btn-success w-100" href="#buycart">
 								COMPRAR | ADD AO CARRINHO
 							</a>
@@ -152,22 +156,26 @@
 							<img src="img/gamepad-g2fe493e14_640.jpg" width="100%" height="200px"
 								style="display: block; margin: auto;">
 							<p class="text-black fw-semibold px-1">Controle XBOX sem fio, Branco e Preto.</p>
-							<span class="fw-semibold text-decoration-line-through px-1 fs-5" style="color: #FF8B20;">360,20 R$</span> -> 
-							<span class="fs-5 fw-semibold text-success"> 200,00 R$<br></span> <span class="px-1 fs-6 text-success">a vista ou no boleto</span>
+							<span class="fw-semibold text-decoration-line-through px-1 fs-5"
+								style="color: #FF8B20;">360,20 R$</span> ->
+							<span class="fs-5 fw-semibold text-success"> 200,00 R$<br></span> <span
+								class="px-1 fs-6 text-success">a vista ou no boleto</span>
 							<a class="btn btn-success w-100" href="#buycart">
 								COMPRAR | ADD AO CARRINHO
 							</a>
 						</div>
 					</a>
 				</div>
-				<div class="col-sm-2 col-md mb-3">
+				<div id="cardprod" class="col-sm-2 col-md mb-3">
 					<a href="#produto1" style="text-decoration: none;">
 						<div id="productDetails">
 							<img src="img/playstation-g3f92c4b3e_1280.jpg" width="100%" height="200px"
 								style="display: block; margin: auto;">
 							<p class="text-black fw-semibold px-1">Controle PS4 sem fio, Branco e Preto.</p>
-							<span class="fw-semibold text-decoration-line-through px-1 fs-5" style="color: #FF8B20;">380,30 R$</span> -> 
-							<span class="fs-5 fw-semibold text-success"> 240,00 R$<br></span> <span class="px-1 fs-6 text-success">a vista ou no boleto</span>
+							<span class="fw-semibold text-decoration-line-through px-1 fs-5"
+								style="color: #FF8B20;">380,30 R$</span> ->
+							<span class="fs-5 fw-semibold text-success"> 240,00 R$<br></span> <span
+								class="px-1 fs-6 text-success">a vista ou no boleto</span>
 							<a class="btn btn-success w-100" href="#buycart">
 								COMPRAR | ADD AO CARRINHO
 							</a>
@@ -180,8 +188,10 @@
 							<img src="img/mobile-phone-g4e0d74690_640.jpg" width="100%" height="200px"
 								style="display: block; margin: auto;">
 							<p class="text-black fw-semibold px-1">Celular android, 6GB ram, DUAL chip.</p>
-							<span class="fw-semibold text-decoration-line-through px-1 fs-5" style="color: #FF8B20;">380,30 R$</span> -> 
-							<span class="fs-5 fw-semibold text-success"> 240,00 R$<br></span> <span class="px-1 fs-6 text-success">a vista ou no boleto</span>
+							<span class="fw-semibold text-decoration-line-through px-1 fs-5"
+								style="color: #FF8B20;">380,30 R$</span> ->
+							<span class="fs-5 fw-semibold text-success"> 240,00 R$<br></span> <span
+								class="px-1 fs-6 text-success">a vista ou no boleto</span>
 							<a class="btn btn-success w-100" href="#buycart">
 								COMPRAR | ADD AO CARRINHO
 							</a>
@@ -190,21 +200,51 @@
 				</div>
 			</div>
 		</div> <!--END PLACE PRODUCTS-->
-		<div class="containergg">
-			<a href="#" style="text-decoration: none; color: rgb(0, 196, 33);">
-				<img src="img/cpu-g58a25c271_640.jpg" width="100%" height="200px" style="object-fit: cover;">
-				<div class="centered">MONTE O SEU COMPUTADOR</div>
-			</a>
+		<div class="container">
+			<div class="containergg">
+				<a href="#" style="text-decoration: none; color: rgb(0, 196, 33);">
+					<img src="img/cpu-g58a25c271_640.jpg" width="100%" height="200px" style="object-fit: cover;">
+					<div class="centered">MONTE O SEU COMPUTADOR</div>
+				</a>
+			</div>
 		</div>
+		<!--TO TOP BUTTON-->
+		<button onclick="topFunction()" id="TopBtn" title="Ir para topo">Topo</button>
 	</section>
+
 	<!--FOOTER BELOW-->
 	<footer>
-
+		<div class="container-fluid bg-dark mt-2">
+			<div class="row pt-2">
+				<div class="col-lg col-sm-2 gy-2">
+					<img src="img/Logotipo-SENAI-Slogan-2048x765.png" height="75px" style="object-fit: cover;"><br>
+					<span class="text-light mb-2" style="font-size: 0.8em;">EDIFÍCIO SEDE FIESP<br>
+						Av. Paulista, 1313, São Paulo/SP CEP 01311-923</span>
+				</div>
+				<div class="col-lg-8 col-sm d-flex justify-content-evenly align-items-center g-2">
+					<a href="#quemsomos" class="text-light link-info link-offset-2">Quem somos</a>
+					<a href="#contatos" class="text-light link-info link-offset-2">Contatos</a>
+					<a href="#vagas" class="text-light link-info link-offset-2">Vagas</a>
+					<a href="#parceiros" class="text-light link-info link-offset-2">Parceiros</a>
+					<a href="#filiais" class="text-light link-info link-offset-2">Filiais</a>
+				</div>
+				<div class="col-lg col-sm-2 pt-2 g-2">
+					<div>
+						<a class="linkredes" href="#insta"><img class="redeslogo" src="img/instagram-gf63490134_640.png"  alt=""></a>
+						<a class="linkredes" href="#whats"><img class="redeslogo" src="img/whatsapp-g96d8f4747_640.png"  alt=""></a>
+						<a class="linkredes" href="#face"><img class="redeslogo" src="img/facebook-gdf5a97462_640.png"  alt=""></a>
+						<a class="linkredes" href="#twitter"><img class="redeslogo" src="img/twitter-g4f958e628_640.png"  alt=""></a>
+					</div>
+					<span class="text-light" style="font-size: 0.8em;">
+						Telefone: (xx) xxxx-xxxx<br> Email: emailficticio@gmail.com
+					</span>
+				</div>
+			</div>
+			<div class="creditos">Site feito por <a href="https://github.com/natan5388">Tnatan</a></div>
+		</div>
 	</footer>
 	<!--SCRIPTS BELOW-->
-	<script>
-
-	</script>
+	<script src="js/index.js"></script>
 </body>
 
 </html>
